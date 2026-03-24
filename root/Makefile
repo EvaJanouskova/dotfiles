@@ -28,8 +28,6 @@ $(strip
 	.config/tig/config
 	.dircolors
 	.tmux.conf
-	.vim/colors/liskin.vim
-	.vimrc
 	_gitignore.mk
 	_help.mk
 	bin/git-repo-name

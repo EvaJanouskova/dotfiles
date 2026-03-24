@@ -1,3 +1,0 @@
-Package: src:openssl:*
-Pin: release a=unstable
-Pin-Priority: 990

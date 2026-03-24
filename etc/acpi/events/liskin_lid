@@ -1,2 +1,0 @@
-event=button/lid .* (close|00)
-action=/usr/local/sbin/liskin-suspend lid

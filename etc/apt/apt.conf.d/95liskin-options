@@ -1,9 +1,2 @@
 APT::Get::AutomaticRemove "true";
 APT::Get::Show-Versions "true";
-APT::Install-Recommends "false";
-APT::Install-Suggests "false";
-APT::Periodic::Enable "0";
-
-Acquire::Check-Valid-Until "false"; /* needed for snapshot.debian.org */
-
-APT::Solver "internal"; /* disable new solver for now */
