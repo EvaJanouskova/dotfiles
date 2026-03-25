@@ -1,0 +1,5 @@
+#!sh
+# ^ sourced from /etc/X11/Xsession
+# shellcheck disable=2239
+
+. "$HOME"/.bashrc.d/10_env.sh
