@@ -1,2 +1,0 @@
-lua vim.lsp.enable('ts_ls')
-autocmd BufNewFile,BufRead manifest.json setlocal sw=2 et

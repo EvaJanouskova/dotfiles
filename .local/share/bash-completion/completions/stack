@@ -1,4 +1,0 @@
-#!bash
-# shellcheck disable=SC2239
-
-eval "$(stack --bash-completion-script stack)"

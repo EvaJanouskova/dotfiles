@@ -1,4 +1,0 @@
-filters: ['diagram.lua']
-metadata:
-  diagram:
-    cache: true

@@ -1,4 +1,0 @@
-#!bash
-# shellcheck disable=SC2239
-
-eval "$(pip completion --bash)"

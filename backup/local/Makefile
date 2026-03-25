@@ -8,7 +8,6 @@ $(strip
 	browser
 	gsettings
 	libvirt
-	liferea
 )
 endef
 

@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-[[ "$(loginctl show-session --property=LockedHint "${XDG_SESSION_ID:?}")" == "LockedHint=no" ]] && exec "$@"

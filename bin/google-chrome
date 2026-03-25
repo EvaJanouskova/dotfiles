@@ -2,8 +2,6 @@
 
 set -eu
 
-export FONTCONFIG_FILE=~/.config/fontconfig/browser.conf
-
 function join { local IFS="$1"; shift; echo "$*"; }
 
 if [[ -x /usr/bin/google-chrome ]]; then

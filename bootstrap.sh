@@ -3,7 +3,7 @@
 # =============================================================================
 #
 # cd ~
-# wget https://raw.githubusercontent.com/liskin/dotfiles/home/bootstrap.sh
+# wget https://raw.githubusercontent.com/EvaJanouskova/dotfiles/home/bootstrap.sh
 # chmod +x bootstrap.sh
 # ./bootstrap.sh
 #
@@ -56,7 +56,7 @@ fi
 dotfiles=~/src/dotfiles.git
 [[ -e "$dotfiles" ]] && o rm -rI "$dotfiles"
 o mkdir -p ~/src
-o git clone --no-checkout -b "$branch" --separate-git-dir="$dotfiles" https://github.com/liskin/dotfiles.git "$(mktemp -d)"
+o git clone --no-checkout -b "$branch" --separate-git-dir="$dotfiles" https://github.com/EvaJanouskova/dotfiles.git "$(mktemp -d)"
 
 function git-dotfiles { git -C "$dotfiles" "$@"; }
 

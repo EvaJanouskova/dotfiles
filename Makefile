@@ -28,22 +28,16 @@ endef
 SUBDIRS := $(shell git-dotfiles ls-files | sed -n -e 's|/Makefile$$||p')
 $(foreach subdir,$(SUBDIRS),$(eval $(call SUBDIR_TEMPLATE,$(subdir))))
 
-SUBDIRS_EXCLUDE := docs/resume-cv .xmonad-testing
+SUBDIRS_EXCLUDE :=
 
 ## Invoke make for all subdirs with Makefiles
 all: $(filter-out $(SUBDIRS_EXCLUDE),$(SUBDIRS))
 
-.local/share/mise: bin/.ext .rustup
-.local/share/bash-completion: .local/share/mise
-
 ## Invoke "make gc" in sub-Makefiles
-gc: bin/.ext%gc
-gc: src-elixir%gc
 gc: .local/share/mise%gc
 
 ## Invoke "make update" in sub-Makefiles
 update: .local/share/mise%update
-update: bin/.ext%update
 
 .PHONY: $(filter bootstrap.sh,$(MAKECMDGOALS))
 all: bootstrap.sh
