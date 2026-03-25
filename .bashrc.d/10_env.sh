@@ -4,6 +4,7 @@
 
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games
 export PATH="$HOME"/.local/share/flatpak/exports/bin:/var/lib/flatpak/exports/bin:"$PATH"
+export PATH="$HOME"/.local/share/mise/shims:"$PATH"
 export PATH="$HOME"/.local/bin:"$PATH"
 export PATH="$HOME"/bin/.untracked:"$PATH"
 export PATH="$HOME"/bin/.aliases:"$PATH"
