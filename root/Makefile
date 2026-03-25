@@ -28,6 +28,7 @@ $(strip
 	.config/tig/config
 	.dircolors
 	.tmux.conf
+	.vimrc
 	_gitignore.mk
 	_help.mk
 	bin/git-repo-name
